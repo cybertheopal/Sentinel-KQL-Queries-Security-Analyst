@@ -1,13 +1,10 @@
-# 🔐 Useful KQL Queries for Microsoft Sentinel (Real-World Examples)
-
-**Last updated:** April 29, 2025
+# Security Analyst Workflow KQL Queries for Microsoft Sentinel (Real-World Examples)
 
 These are practical KQL queries used in real-world Microsoft Sentinel environments for detecting suspicious behavior, attacker TTPs, and system anomalies.  
-Feel free to copy/paste or adapt them for alerts or threat hunting dashboards.
 
 ---
 
-## 🧪 1. Suspicious PowerShell Use
+1. Suspicious PowerShell Use
 
 ```kql
 DeviceProcessEvents
@@ -20,7 +17,7 @@ DeviceProcessEvents
 
 ---
 
-## 💻 2. Failed RDP Login Attempts (Brute Force)
+2. Failed RDP Login Attempts (Brute Force)
 
 ```kql
 SecurityEvent
@@ -34,7 +31,7 @@ SecurityEvent
 
 ---
 
-## 🧬 3. Lateral Movement (PsExec, WMIC, WinRM)
+3. Lateral Movement (PsExec, WMIC, WinRM)
 
 ```kql
 DeviceProcessEvents
@@ -46,7 +43,7 @@ DeviceProcessEvents
 
 ---
 
-## 🔐 4. New Local Admin Account Created
+4. New Local Admin Account Created
 
 ```kql
 SecurityEvent
@@ -63,7 +60,7 @@ SecurityEvent
 
 ---
 
-## 🌐 5. Connections to Known Malicious IPs
+5. Connections to Known Malicious IPs
 
 ```kql
 DeviceNetworkEvents
@@ -74,8 +71,7 @@ DeviceNetworkEvents
 > Matches outbound traffic against known threat intel IPs.
 
 ---
-
-## 📁 6. File Renames Suggesting Ransomware
+6. File Renames Suggesting Ransomware
 
 ```kql
 DeviceFileEvents
@@ -88,7 +84,7 @@ DeviceFileEvents
 
 ---
 
-## 🌍 7. Multiple Login Geolocations for Same User
+7. Multiple Login Geolocations for Same User
 
 ```kql
 SigninLogs
@@ -100,10 +96,4 @@ SigninLogs
 
 ---
 
-## 📢 Contributing
 
-Pull requests welcome. Feel free to add useful queries or improvements!
-
-## 📘 License
-
-MIT License
