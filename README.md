@@ -1,4 +1,4 @@
-# Security Analyst Workflow KQL Queries for Microsoft Sentinel (Real-World Examples)
+# Security Analyst Workflow KQL Queries for Microsoft Sentinel (Real-World Example)
 
 These are practical KQL queries used in real-world Microsoft Sentinel environments for detecting suspicious behavior, attacker TTPs, and system anomalies.  
 
